@@ -3,11 +3,11 @@
   "host": "0.0.0.0",
   "port": 7777,
 
-  "keyLength": 10,
+  "keyLength": 5,
 
-  "maxLength": 400000,
+  "maxLength": 4000000,
 
-  "staticMaxAge": 86400,
+  "staticMaxAge": 3154000000,
 
   "recompressStaticAssets": true,
 
@@ -33,11 +33,8 @@
   },
 
   "storage": {
-    "type": "redis",
-    "host": "0.0.0.0",
-    "port": 6379,
-    "db": 2,
-    "expire": 2592000
+    "type": "file",
+    "path": "./data"
   },
 
   "documents": {
